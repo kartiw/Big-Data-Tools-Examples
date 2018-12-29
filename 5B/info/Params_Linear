@@ -1,0 +1,18 @@
+Linear
+
+aggregationDepth: suggested depth for treeAggregate (>= 2). (default: 2)
+elasticNetParam: the ElasticNet mixing parameter, in range [0, 1]. For alpha = 0, the penalty is an L2 penalty. For alpha = 1, it is an L1 penalty. (default: 0.0)
+featuresCol: features column name. (default: features)
+fitIntercept: whether to fit an intercept term. (default: True)
+labelCol: label column name. (default: label)
+maxIter: max number of iterations (>= 0). (default: 100)
+predictionCol: prediction column name. (default: prediction)
+regParam: regularization parameter (>= 0). (default: 0.0)
+solver: the solver algorithm for optimization. If this is not set or empty, default value is 'auto'. (default: auto)
+standardization: whether to standardize the training features before fitting the model. (default: True)
+tol: the convergence tolerance for iterative algorithms (>= 0). (default: 1e-06)
+weightCol: weight column name. If this is not set or empty, we treat all instance weights as 1.0. (undefined)
+
+regparam=0.3 -> r2 score 0.176631
+regparam=1.0 -> r2 score 0.150291
+regparam=0.1-> r2 score 0.176608

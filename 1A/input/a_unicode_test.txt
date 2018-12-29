@@ -1,0 +1,18 @@
+This file contains some Unicode test cases.
+Unicode normalization: pairs should be equivalent
+zzzzöo
+zzzzöo
+zzzzẋ̣
+zzzzẋ̣
+Unicode normalization: pairs should NOT be equivalent
+zzzzfi
+zzzzﬁ
+zzzzI
+zzzzⅠ
+Uppercase/lowercase: pairs should be equivalent
+zzzzHeLlo
+zzzzhEllo
+zzzzПривет
+zzzzпривет
+Others
+zzzzمرحبا (some R to L text)

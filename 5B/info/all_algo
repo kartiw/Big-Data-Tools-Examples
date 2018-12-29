@@ -1,0 +1,27 @@
+estimator_gridbuilder(
+            LinearRegression(),
+            dict(regParam=[0.2],         # [0.1, 0.01]
+                 elasticNetParam=[.8],  # 0-L2, 1-L1
+                 #aggregationDepth=[5],
+                 #standardization=[False],
+                 #tol=[0.000005],
+                 #weightCol,
+                 maxIter=[100]
+            )),
+        
+        estimator_gridbuilder(
+                RandomForestRegressor(),
+                dict(featureSubsetStrategy=["onethird"],
+                        )),
+        
+        estimator_gridbuilder(
+                GBTRegressor(),
+                dict(maxIter=[20],
+                     maxDepth=[10],
+                     lossType=['squared'],
+                        )),
+         """       
+        estimator_gridbuilder(
+                DecisionTreeRegressor(),
+                dict(
+                        ))"""
